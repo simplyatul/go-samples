@@ -1,2 +1,2 @@
-# go-samples
-Golang sample codes
+# Go/Golang Sample Programs 
+As the name suggests...
