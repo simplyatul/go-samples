@@ -50,5 +50,5 @@ func Struct_0() {
 	log.Printf("Type of anonymousFieldStruct => %T", aFS) // Type of anonymousFieldStruct => structs.anonymousFieldStruct
 
 	ptrToaFS := &aFS
-	log.Printf("Type of ptrToaSF => %T", ptrToaFS) // Type of ptrToaSF => *structs.anonymousFieldStruct
+	log.Printf("Type of ptrToaFS => %T", ptrToaFS) // Type of ptrToaFS => *structs.anonymousFieldStruct
 }

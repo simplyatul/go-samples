@@ -4,8 +4,8 @@ import (
 	_ "fmt" // w/o _, compiler will throw an error. Ok to use in development code. Must be avoided in production grade code
 	_ "go-samples/namaste"
 	_ "go-samples/pointers"
+	"go-samples/signals"
 
-	"go-samples/structs"
 	"log"
 )
 
@@ -16,6 +16,7 @@ func main() {
 	// namaste.SayNamaste()
 	// pointers.Checkptr_1()
 
-	structs.Struct_0()
+	//structs.Struct_0()
+	signals.CatchCtrlC()
 
 }
