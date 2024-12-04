@@ -2,9 +2,10 @@ package main
 
 import (
 	_ "fmt" // w/o _, compiler will throw an error. Ok to use in development code. Must be avoided in production grade code
+	"go-samples/goroutines"
 	_ "go-samples/namaste"
 	_ "go-samples/pointers"
-	"go-samples/signals"
+	_ "go-samples/signals"
 
 	"log"
 )
@@ -17,6 +18,6 @@ func main() {
 	// pointers.Checkptr_1()
 
 	//structs.Struct_0()
-	signals.CatchCtrlC()
-
+	//signals.CatchCtrlC()
+	goroutines.RunTimePkg()
 }
