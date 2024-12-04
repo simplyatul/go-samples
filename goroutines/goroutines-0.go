@@ -19,4 +19,5 @@ func RunTimePkg() {
 	log.Printf("No of Go routines: %d", runtime.NumGoroutine()) // Outputs: 2 (main is a goroutine)
 	say("Boss")
 	time.Sleep(1 * time.Millisecond)
+	log.Printf("No of Go routines: %d", runtime.NumGoroutine())
 }

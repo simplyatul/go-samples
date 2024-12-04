@@ -2,7 +2,8 @@ package main
 
 import (
 	_ "fmt" // w/o _, compiler will throw an error. Ok to use in development code. Must be avoided in production grade code
-	"go-samples/goroutines"
+	"go-samples/channels"
+	_ "go-samples/goroutines"
 	_ "go-samples/namaste"
 	_ "go-samples/pointers"
 	_ "go-samples/signals"
@@ -19,5 +20,7 @@ func main() {
 
 	//structs.Struct_0()
 	//signals.CatchCtrlC()
-	goroutines.RunTimePkg()
+	// goroutines.RunTimePkg()
+	channels.ChannelsTestOne()
+
 }
