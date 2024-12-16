@@ -4,6 +4,11 @@ import (
 	"log"
 )
 
+type Person struct {
+	Name string
+	age  int
+}
+
 type Item struct {
 	itemName        string
 	itemDescription string
