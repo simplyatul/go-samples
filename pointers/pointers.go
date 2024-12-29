@@ -34,7 +34,7 @@ func Checkptr_1() {
 	log.Printf("Address of 0th element of slice %p\n", &sls[0])                    // 0xc000022100
 	log.Println("-------------------------------")
 	log.Printf("array contents: %v, len %d, cap %d\n", arr, len(arr), cap(arr)) // array contents: [12 78 50], len 3, cap 3
-	log.Printf("Address store in arr %p\n", arr)                                // Address store in arr %!p([3]int=[12 78 50])
+	log.Printf("Address store in arr %p\n", &arr)                               // Address store in arr 0xc00013a000
 	log.Printf("Address of arr variable %p\n", &arr)                            // Address of arr variable 0xc00013a000
 	log.Printf("Address of 0th element of arr %p\n", &arr[0])                   // Address of 0th element of arr 0xc00013a000
 

@@ -4,9 +4,13 @@ import (
 	"log"
 )
 
+type PersonAge struct {
+	age int
+}
+
 type Person struct {
 	Name string
-	age  int
+	PersonAge
 }
 
 type Item struct {
@@ -22,6 +26,9 @@ type localItem struct {
 }
 
 func Struct_0() {
+	var p Person
+	p.age = 10
+	log.Printf("Can access directly age %d", p.age)
 	log.Println("----------------------------")
 
 	itPtr := &Item{

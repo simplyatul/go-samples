@@ -3,8 +3,7 @@ package main
 import (
 	_ "fmt" // w/o _, compiler will throw an error. Ok to use in development code. Must be avoided in production grade code
 	_ "go-samples/goroutines"
-	"go-samples/interfaces"
-	_ "go-samples/namaste"
+	"go-samples/namaste"
 	_ "go-samples/pointers"
 	_ "go-samples/signals"
 
@@ -15,7 +14,7 @@ func main() {
 	// Set log flags to include date, time with milliseconds, short file name, and line number
 	log.SetFlags(log.Ldate | log.Ltime | log.Lmicroseconds | log.Lshortfile)
 
-	// namaste.SayNamaste()
+	namaste.SayNamaste()
 	// pointers.Checkptr_1()
 
 	// structs.Struct_0()
@@ -24,6 +23,6 @@ func main() {
 	// channels.ChannelsTestOne()
 
 	//interfaces.CheckInterfaces_0()
-	interfaces.CheckInterfaces_1()
+	// interfaces.CheckInterfaces_1()
 	//interfaces.CheckInterfaces_2()
 }

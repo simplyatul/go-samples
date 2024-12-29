@@ -5,7 +5,9 @@ import (
 	"log"
 )
 
-func SayNamaste() {
-	fmt.Println("Namaste...")
-	log.Println("Namaste...")
+func SayNamaste() string {
+	s := "Namaste"
+	fmt.Println(s)
+	log.Println(s)
+	return s
 }
